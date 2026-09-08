@@ -2,8 +2,8 @@
 
 using namespace std;
 
-void Consultarsaldo(float saldo, float &saldo_ref, float *saldo_ptr){
-    cout<<"por valor:"<<saldo<<"\npor referencia"<<&saldo_ref<<"\n por puntero:"<<*saldo_ptr<<endl;
+void Consultarsaldo(float saldo,const float &saldo_ref, float *saldo_ptr){
+    cout<<"por valor:"<<saldo<<endl;
 
 }
 
@@ -32,17 +32,17 @@ void retirar(float &saldo, int cantidad){
 
 
 int main(){
-    float saldo = 100, saldo_ref, *saldo_ptr ; 
+    float saldo = 100, saldo_ref=saldo, *saldo_ptr ; 
     int opcion;
 
+do
+{
     cout << "Ingrese la opcion que quiere realizar" << endl;
     cout << "1. Consultar saldo" << endl;
     cout << "2. Depositar" << endl;
     cout << "3. Retirar" << endl;
     cout << "4. Salir" << endl;
     cin >> opcion;
-do
-{
     switch (opcion)
     {
     case 1:
