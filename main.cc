@@ -1,6 +1,10 @@
 #include <iostream>
 
 using namespace std;
+void Consultarsaldo(saldo,&saldo,*saldo){
+    cout<<"por valor:"<<saldo<<"\npor referencia"<<&saldo<<"\n por puntero:"<<*saldo<<endl;
+
+}
 
 int main(){
  
