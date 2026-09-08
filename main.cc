@@ -7,8 +7,6 @@ void Consultarsaldo(saldo,&saldo,*saldo){
 }
 
 int main(){
- 
-
     int opcion;
 
     cout << "Ingrese la opcion que quiere realizar" << endl;
@@ -21,7 +19,7 @@ int main(){
     switch (opcion)
     {
     case 1:
-        /* code */
+        Consultarsaldo(saldo)
         break;
     case 2:
         /* code */
